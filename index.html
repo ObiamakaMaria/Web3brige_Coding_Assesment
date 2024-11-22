@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savings Group Web App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>
+            <i class="fa-solid fa-piggy-bank"></i>
+            Save-Vest</h1>
+        <p style="font-style: italic;">Join the group and save towards a brighter future with amazing returns!</p>
+    </header>
+
+    <main>
+        <section id="registration">
+            <h2>Register a Student</h2>
+            <form id="studentForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter name" required>
+                
+                <label for="tier">Choose Tier:</label>
+                <select id="tier" required>
+                    <option value="" disabled selected>Select a tier</option>
+                    <option value="1">Tier 1 (10,000 Naira, 5% Interest)</option>
+                    <option value="2">Tier 2 (20,000 Naira, 10% Interest)</option>
+                    <option value="3">Tier 3 (30,000 Naira, 20% Interest)</option>
+                </select>
+
+                <label for="image">Upload Image:</label>
+                <input type="file" id="image" accept="image/*">
+
+                <button type="submit">Add Student</button>
+            </form>
+        </section>
+
+        <section id="dashboard">
+            <h2>Savings Dashboard</h2>
+            <p>Total Savings: <span id="totalSavings">0</span> Naira</p>
+            <div id="studentsList"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Follow us on:</p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/obiamaka-aghadiuno/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy; 2024 Savings Group App. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
